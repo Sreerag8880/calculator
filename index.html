@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: rgb(6, 6, 0);">
+
+    <style>
+        .alignclass {
+            text-align: center;
+            gap: 20px;
+        }
+
+        .div1 {
+            gap: 20px;
+        }
+
+        button {
+            width: 35px;
+            /* height: 35px; */
+            /* border: 5px, solid, rgb(166, 39, 39); */
+            /* border-radius: 5px; */
+            /* margin: 5px;  */
+            /* margin: 5px; */
+            margin: 5px;
+        }
+
+
+        .line {
+            height: 0.1rem;
+            background-color: rgb(136, 151, 151);
+        }
+
+        h3 {
+            color: azure;
+        }
+
+        /* #ac{
+            width: 40px;
+            
+        } */
+    </style>
+
+    <div id="div12" class="container mt-5  ">
+        <div style="  width: 250px; height: 375px; background-color: rgb(2, 11, 15); border: 2px solid black; border-radius:10px;"
+            class="alignclass container">
+            <h3>CALCULATOR</h3>
+            <div class="line "></div>
+            <br>
+
+            <input id="result" type="text" class="container w-75">
+            <br><br>
+
+            <div class="div1">
+                <button onclick=" displayElement(1)" type="button" class="btn btn-secondary">1</button>
+                <button onclick=" displayElement(2)" type="button" class="btn btn-secondary">2</button>
+                <button onclick=" displayElement(3)" type="button" class="btn btn-secondary">3</button>
+                <button onclick=" displayElement('+')" type="button" class="btn btn-light">+</button>
+            </div>
+
+            <div class="div1">
+                <button onclick=" displayElement(4)" type="button" class="btn btn-secondary">4</button>
+                <button onclick=" displayElement(5)" type="button" class="btn btn-secondary">5</button>
+                <button onclick=" displayElement(6)" type="button" class="btn btn-secondary">6</button>
+                <button onclick=" displayElement('-')" type="button" class="btn btn-light">-</button>
+            </div>
+
+            <div class="div1">
+                <button onclick=" displayElement(7)" type="button" class="btn btn-secondary">7</button>
+                <button onclick=" displayElement(8)" type="button" class="btn btn-secondary">8</button>
+                <button onclick=" displayElement(9)" type="button" class="btn btn-secondary">9</button>
+                <button onclick=" displayElement('*')" type="button" class="btn btn-light">*</button>
+            </div>
+
+            <div class="div1 ms-1">
+                <button onclick=" displayElement('/')" type="button" class="btn btn-light">/</button>
+                <button onclick=" displayElement('.')" type="button" class="btn btn-light">.</button>
+                <button id="ac" onclick="allClear()" type="button" class="btn btn-danger">AC</button>
+                <button onclick=" backSpace()" type="button" class="btn btn-danger">C</button><br>
+                <button onclick=" evaluateOperator()" type="button" class="btn btn-success">=</button>
+            </div>
+        </div>
+
+
+
+
+        fvyvh
+    </div>
+
+</body>
+<script src="./calcu.js"></script>
+
+</html>
